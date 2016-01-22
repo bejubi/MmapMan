@@ -1,23 +1,42 @@
-﻿<Activity mc:Ignorable="sap2010" x:Class="MmapManager.Console.Process" 
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="MmapManager.Console.Process" sap2010:WorkflowViewState.IdRef="MmapManager.Console.Process_1"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:local="clr-namespace:MmapManager.Console.Activity"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <Sequence>
-    <local:ProcessStep stepId="0010" stepDescription="Send Slack message"         stepInstructions="Send Slack message to the group to let them know the process has started." />
-    <local:ProcessStep stepId="0020" stepDescription="Download new tax rates"     stepInstructions="Get new tax rates from www.iftach.org as a .txt file. Make sure to select the correct quarter (http://www.iftach.org/taxmatrix/charts/4Q2015.txt)" />
-    <local:ProcessStep stepId="0030" stepDescription="Copy file"                  stepInstructions="Copy the tax rates file to the network location." />
-    <local:ProcessStep stepId="0040" stepDescription="Clean DMO database RefFuelTaxRates table">
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <local:ProcessStep sap2010:WorkflowViewState.IdRef="ProcessStep_1" stepDescription="Send Slack message" stepId="0010" stepInstructions="Send Slack message to the group to let them know the process has started." />
+    <local:ProcessStep sap2010:WorkflowViewState.IdRef="ProcessStep_2" stepDescription="Download new tax rates" stepId="0020" stepInstructions="Get new tax rates from www.iftach.org as a .txt file. Make sure to select the correct quarter (http://www.iftach.org/taxmatrix/charts/4Q2015.txt)" />
+    <local:ProcessStep sap2010:WorkflowViewState.IdRef="ProcessStep_3" stepDescription="Copy file" stepId="0030" stepInstructions="Copy the tax rates file to the network location." />
+    <local:ProcessStep sap2010:WorkflowViewState.IdRef="ProcessStep_4" stepDescription="Clean DMO database RefFuelTaxRates table" stepId="0040">
       <local:ProcessStep.stepInstructions>
         <InArgument x:TypeArguments="x:String">
           <mca:CSharpValue x:TypeArguments="x:String" xml:space="preserve">"Run the following queries:\r\n  a. SELECT * FROM RefFuelTaxRates WHERE RateMonth &gt;= '10/1/2015' -- Check the existing data\r\n  b. DELETE FROM RefFuelTaxRates WHERE RateMonth &gt;= '10/1/2015' -- change the date for the appropriate first month of the quarter"</mca:CSharpValue>
         </InArgument>
       </local:ProcessStep.stepInstructions>
     </local:ProcessStep>
-    <local:ProcessStep stepId="0050" stepDescription="Send email to stakeholders" stepInstructions="Send an email to stakeholders (Mark Johnson, Sean Colligan, Mike Maass, Dan McGill) letting them know the process is complete." />
-    <sads:DebugSymbol.Symbol>d09DOlxkZXZcZGV2ZWxvcG1lbnRcU2FuZGJveFxNbWFwTWFuXE1tYXBNYW5hZ2VyXE1tYXBNYW5hZ2VyLkNvbnNvbGVcUHJvY2Vzcy54YW1sFScDNA4CAQEoBSjaAQIBEikFKaYCAgEOKgUquAECAQorBTEZAgEGMgUylwICAQIojAEo1wECARUoWChsAgEUKHQoegIBEymQASmjAgIBESlYKXACARApeCl+AgEPKoMBKrUBAgENKlgqYwIBDCprKnECAQsuCy7lAgIBCStYK4IBAgEIK4oBK5ABAgEHMpQBMpQCAgEFMlgydAIBBDJ8MoIBAgED</sads:DebugSymbol.Symbol>
+    <local:ProcessStep sap2010:WorkflowViewState.IdRef="ProcessStep_5" stepDescription="Send email to stakeholders" stepId="0050" stepInstructions="Send an email to stakeholders (Mark Johnson, Sean Colligan, Mike Maass, Dan McGill) letting them know the process is complete." />
+    <sads:DebugSymbol.Symbol>d1ZDOlxVc2Vyc1x0MDAwMjU3XERvY3VtZW50c1xHaXRIdWJcTW1hcE1hblxNbWFwTWFuYWdlclxNbWFwTWFuYWdlci5Db25zb2xlXFByb2Nlc3MueGFtbBULAxgOAgEBDAUM2gECARINBQ2mAgIBDg4FDrgBAgEKDwUVGQIBBhYFFpcCAgECDIwBDNcBAgEVDFgMbAIBFAx0DHoCARMNkAENowICARENWA1wAgEQDXgNfgIBDw6DAQ61AQIBDQ5YDmMCAQwOaw5xAgELEgsS5QICAQkPWA+CAQIBCA+KAQ+QAQIBBxaUARaUAgIBBRZYFnQCAQQWfBaCAQIBAw==</sads:DebugSymbol.Symbol>
   </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="ProcessStep_1" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="ProcessStep_2" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="ProcessStep_3" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="ProcessStep_4" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="ProcessStep_5" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="222,394">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="MmapManager.Console.Process_1" sap:VirtualizedContainerService.HintSize="262,474" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
