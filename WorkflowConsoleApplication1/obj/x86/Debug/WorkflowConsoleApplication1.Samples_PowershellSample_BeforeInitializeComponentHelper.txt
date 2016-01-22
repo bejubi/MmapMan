@@ -1,0 +1,2 @@
+PowershellSample.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

@@ -1,0 +1,16 @@
+obj\x86\Debug\Workflow1.g.xaml
+obj\x86\Debug\ProcessStep.g.xaml
+obj\x86\Debug\ExecutePowershellSequence.g.xaml
+obj\x86\Debug\WhileLoopSample.g.xaml
+obj\x86\Debug\PowershellSample.g.xaml
+obj\x86\Debug\SimpleXmlSample.g.xaml
+obj\x86\Debug\ContainerSample.g.xaml
+obj\x86\Debug\Step.g.xaml
+obj\x86\Debug\WorkflowConsoleApplication1_Workflow1_BeforeInitializeComponentHelper.txt
+obj\x86\Debug\WorkflowConsoleApplication1_ProcessMockup_BeforeInitializeComponentHelper.txt
+obj\x86\Debug\WorkflowConsoleApplication1.Activity_ExecutePowershellSequence_BeforeInitializeComponentHelper.txt
+obj\x86\Debug\WorkflowConsoleApplication1.Samples_WhileLoopSample_BeforeInitializeComponentHelper.txt
+obj\x86\Debug\WorkflowConsoleApplication1.Samples_PowershellSample_BeforeInitializeComponentHelper.txt
+obj\x86\Debug\WorkflowConsoleApplication1.Samples_SimpleXmlSample_BeforeInitializeComponentHelper.txt
+obj\x86\Debug\WorkflowConsoleApplication1.Samples_ContainerSample_BeforeInitializeComponentHelper.txt
+obj\x86\Debug\WorkflowConsoleApplication1.Samples_Step_BeforeInitializeComponentHelper.txt

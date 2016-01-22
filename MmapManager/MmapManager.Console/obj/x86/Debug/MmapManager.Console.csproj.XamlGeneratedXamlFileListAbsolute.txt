@@ -1,0 +1,4 @@
+obj\x86\Debug\Process.g.xaml
+obj\x86\Debug\ProcessStep.g.xaml
+obj\x86\Debug\MmapManager.Console_Process_BeforeInitializeComponentHelper.txt
+obj\x86\Debug\MmapManager.Console.Activity_ProcessStep_BeforeInitializeComponentHelper.txt

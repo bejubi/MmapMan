@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mc1:Process xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:local="clr-namespace:MmapManager.Console.Activity;assembly=MmapManager.Console" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mc1="clr-namespace:MmapManager.Console;assembly=MmapManager.Console" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <mc1:Process.Implementation>
+    <Sequence>
+      <local:ProcessStep stepId="0010" stepDescription="Send Slack message" stepInstructions="Send Slack message to the group to let them know the process has started." />
+      <local:ProcessStep stepId="0020" stepDescription="Download new tax rates" stepInstructions="Get new tax rates from www.iftach.org as a .txt file. Make sure to select the correct quarter (http://www.iftach.org/taxmatrix/charts/4Q2015.txt)" />
+      <local:ProcessStep stepId="0030" stepDescription="Copy file" stepInstructions="Copy the tax rates file to the network location." />
+      <local:ProcessStep stepId="0040" stepDescription="Clean DMO database RefFuelTaxRates table">
+        <local:ProcessStep.stepInstructions>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String" xml:space="preserve">"Run the following queries:\r\n  a. SELECT * FROM RefFuelTaxRates WHERE RateMonth &gt;= '10/1/2015' -- Check the existing data\r\n  b. DELETE FROM RefFuelTaxRates WHERE RateMonth &gt;= '10/1/2015' -- change the date for the appropriate first month of the quarter"</mca:CSharpValue>
+          </InArgument>
+        </local:ProcessStep.stepInstructions>
+      </local:ProcessStep>
+      <local:ProcessStep stepId="0050" stepDescription="Send email to stakeholders" stepInstructions="Send an email to stakeholders (Mark Johnson, Sean Colligan, Mike Maass, Dan McGill) letting them know the process is complete." />
+      <sads:DebugSymbol.Symbol>d09DOlxkZXZcZGV2ZWxvcG1lbnRcU2FuZGJveFxNbWFwTWFuXE1tYXBNYW5hZ2VyXE1tYXBNYW5hZ2VyLkNvbnNvbGVcUHJvY2Vzcy54YW1sFScDNA4CAQEoBSjaAQIBEikFKaYCAgEOKgUquAECAQorBTEZAgEGMgUylwICAQIojAEo1wECARUoWChsAgEUKHQoegIBEymQASmjAgIBESlYKXACARApeCl+AgEPKoMBKrUBAgENKlgqYwIBDCprKnECAQsuCy7lAgIBCStYK4IBAgEIK4oBK5ABAgEHMpQBMpQCAgEFMlgydAIBBDJ8MoIBAgED</sads:DebugSymbol.Symbol>
+    </Sequence>
+  </mc1:Process.Implementation>
+</mc1:Process>

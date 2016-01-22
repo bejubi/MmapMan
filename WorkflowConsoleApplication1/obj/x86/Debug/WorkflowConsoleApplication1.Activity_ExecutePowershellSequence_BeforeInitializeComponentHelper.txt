@@ -1,0 +1,2 @@
+ExecutePowershellSequence.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

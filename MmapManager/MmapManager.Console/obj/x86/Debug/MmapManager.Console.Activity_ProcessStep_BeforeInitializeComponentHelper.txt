@@ -1,0 +1,2 @@
+ProcessStep.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

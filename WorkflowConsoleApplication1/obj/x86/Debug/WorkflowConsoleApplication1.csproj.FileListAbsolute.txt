@@ -1,0 +1,120 @@
+c:\users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\bin\Debug\WorkflowConsoleApplication1.exe.config
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\Workflow1.g.xaml
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_Workflow1_BeforeInitializeComponentHelper.txt
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\_WorkflowConsoleApplication1.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\Workflow1.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_Workflow1_BeforeInitializeComponentHelper.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.csproj.XamlGeneratedCodeFileListAbsolute.txt
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.csproj.XamlGeneratedXamlFileListAbsolute.txt
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.pdb
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Workflow1.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Workflow1.g.xaml
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\_WorkflowConsoleApplication1.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\bin\Debug\WorkflowConsoleApplication1.exe
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\bin\Debug\WorkflowConsoleApplication1.pdb
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.exe
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_Workflow1_CompiledExpressionRoot.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.csproj.FileListAbsolute.txt
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.dll
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_ProcessMockup_BeforeInitializeComponentHelper.txt
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.ProcessMockup_FindScript_BeforeInitializeComponentHelper.txt
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.ProcessMockup_ExecuteScript_BeforeInitializeComponentHelper.txt
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_ProcessMockup_BeforeInitializeComponentHelper.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.ProcessMockup_FindScript_BeforeInitializeComponentHelper.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.ProcessMockup_ExecuteScript_BeforeInitializeComponentHelper.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ExecuteScript.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ExecuteScript.g.xaml
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\FindScript.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\FindScript.g.xaml
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Process.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Process.g.xaml
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ProcessMockup.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ProcessMockup.g.xaml
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\ProcessStep.g.xaml
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\ProcessStep.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_ProcessMockup_CompiledExpressionRoot.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ProcessStep.g.cs
+C:\Users\t000257\documents\visual studio 2013\Projects\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ProcessStep.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\bin\Debug\WorkflowConsoleApplication1.exe.config
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.exe
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.pdb
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\bin\Debug\WorkflowConsoleApplication1.exe
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\bin\Debug\WorkflowConsoleApplication1.pdb
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\Workflow1.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\ProcessStep.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\ExecutePowershellSequence.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_Workflow1_BeforeInitializeComponentHelper.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_ProcessMockup_BeforeInitializeComponentHelper.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Activity_ExecutePowershellSequence_BeforeInitializeComponentHelper.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\_WorkflowConsoleApplication1.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\Workflow1.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\ProcessStep.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\ExecutePowershellSequence.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_Workflow1_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_ProcessMockup_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Activity_ExecutePowershellSequence_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.csproj.XamlGeneratedCodeFileListAbsolute.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.csproj.XamlGeneratedXamlFileListAbsolute.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_Workflow1_CompiledExpressionRoot.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1_ProcessMockup_CompiledExpressionRoot.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Activity_ExecutePowershellSequence_CompiledExpressionRoot.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ExecutePowershellSequence.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ExecutePowershellSequence.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ExecuteScript.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ExecuteScript.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\FindScript.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\FindScript.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Process.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Process.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ProcessMockup.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ProcessMockup.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ProcessStep.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ProcessStep.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Workflow1.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Workflow1.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\_WorkflowConsoleApplication1.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WhileLoopSample.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_WhileLoopSample_BeforeInitializeComponentHelper.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WhileLoopSample.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_WhileLoopSample_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\WhileLoopSample.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\WhileLoopSample.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_WhileLoopSample_CompiledExpressionRoot.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\PowershellSample.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_PowershellSample_BeforeInitializeComponentHelper.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\PowershellSample.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_PowershellSample_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\PowershellSample.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\PowershellSample.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\SimpleXmlSample.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\ContainerSample.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_SimpleXmlSample_BeforeInitializeComponentHelper.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_ContainerSample_BeforeInitializeComponentHelper.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\SimpleXmlSample.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\ContainerSample.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_SimpleXmlSample_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_ContainerSample_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ContainerSample.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\ContainerSample.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\SimpleXmlSample.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\SimpleXmlSample.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\Step.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_Step_BeforeInitializeComponentHelper.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\Step.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_Step_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_Step_CompiledExpressionRoot.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Step.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\Step.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\SimpleXmlSample - Copy.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\SimpleXmlSample - Copy.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\SimpleXmlSample2.g.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\InProcessTempFiles\SimpleXmlSample2.g.xaml
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_SimpleXmlSample_CompiledExpressionRoot.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.csproj.FileListAbsolute.txt
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.dll
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_ContainerSample_CompiledExpressionRoot.cs
+C:\dev\development\Sandbox\MmapMan\WorkflowConsoleApplication1\obj\x86\Debug\WorkflowConsoleApplication1.Samples_PowershellSample_CompiledExpressionRoot.cs

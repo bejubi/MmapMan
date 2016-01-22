@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<local:SimpleXmlSample xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:local="clr-namespace:WorkflowConsoleApplication1.Samples;assembly=WorkflowConsoleApplication1" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <local:SimpleXmlSample.Implementation>
+    <Sequence>
+      <local:Step stepId="0010">
+        <local:Step.stepDescription>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"Lorem ipsum dolor sit amet, sed ei mundi denique conceptam"</mca:CSharpValue>
+          </InArgument>
+        </local:Step.stepDescription>
+        <local:Step.stepInstructions>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"Ei vel prima sonet omnes, stet option nec cu. In vitae lobortis sed. In purto simul necessitatibus mea, tantas semper interesset mei ei. Ne eos graeci scripserit, eam vocent apeirian ad, cu sea porro necessitatibus. \r\n\r\n Nostro detracto vis eu, duo in legendos maluisset molestiae. Sed natum atqui at. Essent fabulas quo an. Fabulas scriptorem ea nam, te sed suas timeam. Has altera blandit in, ius erant assueverit eu. Vix bonorum electram maiestatis ne, utinam quodsi mandamus vis in. No eos perfecto invenire atomorum, id noluisse phaedrum posidonium usu."</mca:CSharpValue>
+          </InArgument>
+        </local:Step.stepInstructions>
+      </local:Step>
+      <local:Step stepId="0020">
+        <local:Step.stepDescription>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"Vis hinc euismod maluisset ut"</mca:CSharpValue>
+          </InArgument>
+        </local:Step.stepDescription>
+        <local:Step.stepInstructions>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"In sed cibo regione, his cu mollis deleniti adipiscing, cu etiam voluptatum interesset eam. In est omnis assum. Nam an iusto nostrud legendos. Graeci appareat luptatum nec an, cibo ancillae vim ei. Amet probo everti cum ne, \r\n\r\n ea case ferri illud cum."</mca:CSharpValue>
+          </InArgument>
+        </local:Step.stepInstructions>
+      </local:Step>
+      <local:Step stepId="0030">
+        <local:Step.stepDescription>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"Next step"</mca:CSharpValue>
+          </InArgument>
+        </local:Step.stepDescription>
+        <local:Step.stepInstructions>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">""</mca:CSharpValue>
+          </InArgument>
+        </local:Step.stepInstructions>
+      </local:Step>
+      <local:Step stepId="0040" />
+    </Sequence>
+  </local:SimpleXmlSample.Implementation>
+</local:SimpleXmlSample>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workflow name="MakingCoffee">
+  <step id="coffee0010">
+    <name>Coffee grinding</name>
+    <description>Grinding the coffee</description>
+    <instructions>Get out the coffee and coffee grinder. Put the coffee in the grinder.
+    Turn on the grinder for a while. Shut it off</instructions>
+  </step>
+  <step id="coffee0020">
+    <name>Water filling</name>
+    <description>Filling the water container</description>
+    <instructions>Open the top of the coffee maker and pour in water. You can use
+    filtered water if your wife is around, but use it from the sink if not.</instructions>
+  </step>
+  <step id="coffee0030">
+    <name></name>
+    <description></description>
+    <instructions></instructions>
+  </step>
+  <step id="coffee0040">
+    <name></name>
+    <description></description>
+    <instructions></instructions>
+  </step>
+</workflow>

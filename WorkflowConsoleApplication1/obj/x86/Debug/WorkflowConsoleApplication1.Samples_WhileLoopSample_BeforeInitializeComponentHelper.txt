@@ -1,0 +1,2 @@
+WhileLoopSample.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

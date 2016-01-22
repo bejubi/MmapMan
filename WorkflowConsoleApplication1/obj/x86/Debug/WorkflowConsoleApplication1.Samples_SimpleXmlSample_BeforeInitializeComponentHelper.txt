@@ -1,0 +1,2 @@
+SimpleXmlSample.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

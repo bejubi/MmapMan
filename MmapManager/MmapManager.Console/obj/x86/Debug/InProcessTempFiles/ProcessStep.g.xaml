@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<local:ProcessStep xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:local="clr-namespace:MmapManager.Console.Activity;assembly=MmapManager.Console" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>MmapManager.Console</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <local:ProcessStep.Implementation>
+    <Sequence DisplayName="ProcessStep">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="_stepId" />
+        <Variable x:TypeArguments="x:String" Name="_stepDescription" />
+        <Variable x:TypeArguments="x:String" Name="_stepInstructions" />
+        <Variable x:TypeArguments="x:Boolean" Default="False" Name="_isExecuteStep" />
+        <Variable x:TypeArguments="x:String" Name="_isExecuteStepAnswer" />
+        <Variable x:TypeArguments="x:Boolean" Default="False" Name="_isStepComplete" />
+        <Variable x:TypeArguments="x:String" Name="_isStepCompleteAnswer" />
+        <Variable x:TypeArguments="x:Boolean" Default="False" Name="_doesPowershellAutomationExist" />
+        <Variable x:TypeArguments="x:Boolean" Default="False" Name="_doesDotNetAutomationExist" />
+      </Sequence.Variables>
+      <Assign>
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <mca:CSharpReference x:TypeArguments="x:String">_stepId</mca:CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">stepId</mca:CSharpValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign>
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <mca:CSharpReference x:TypeArguments="x:String">_stepDescription</mca:CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">stepDescription</mca:CSharpValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign>
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <mca:CSharpReference x:TypeArguments="x:String">_stepInstructions</mca:CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">stepInstructions</mca:CSharpValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+      <WriteLine>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">String.Format("\r\n\r\n-----------------\r\nStep id: {0}", stepId)</mca:CSharpValue>
+        </InArgument>
+      </WriteLine>
+      <local:FileExists AutomationExtension="ps1">
+        <local:FileExists.AutomationFileExists>
+          <OutArgument x:TypeArguments="x:Boolean">
+            <mca:CSharpReference x:TypeArguments="x:Boolean">_doesPowershellAutomationExist</mca:CSharpReference>
+          </OutArgument>
+        </local:FileExists.AutomationFileExists>
+        <local:FileExists.StepId>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">_stepId</mca:CSharpValue>
+          </InArgument>
+        </local:FileExists.StepId>
+      </local:FileExists>
+      <If>
+        <If.Condition>
+          <InArgument x:TypeArguments="x:Boolean">
+            <mca:CSharpValue x:TypeArguments="x:Boolean">_doesPowershellAutomationExist</mca:CSharpValue>
+          </InArgument>
+        </If.Condition>
+        <If.Then>
+          <While>
+            <While.Condition>
+              <mca:CSharpValue x:TypeArguments="x:Boolean">!_isStepComplete</mca:CSharpValue>
+            </While.Condition>
+            <Sequence>
+              <WriteLine>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">String.Format("\r\n---Step description:\r\n{0}\r\n\r\nExecute step? (y/n)", stepDescription)</mca:CSharpValue>
+                </InArgument>
+              </WriteLine>
+              <Assign>
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">
+                    <mca:CSharpReference x:TypeArguments="x:String">_isExecuteStepAnswer</mca:CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">
+                    <mca:CSharpValue x:TypeArguments="x:String">Console.ReadKey().Key.ToString()</mca:CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign>
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">
+                    <mca:CSharpReference x:TypeArguments="x:Boolean">_isExecuteStep</mca:CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <mca:CSharpValue x:TypeArguments="x:Boolean">_isExecuteStepAnswer == "Y"</mca:CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <If>
+                <If.Condition>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <mca:CSharpValue x:TypeArguments="x:Boolean">_isExecuteStep</mca:CSharpValue>
+                  </InArgument>
+                </If.Condition>
+                <If.Then>
+                  <Sequence DisplayName="PowershellAutomation">
+                    <local:ExecutePowershellScript>
+                      <local:ExecutePowershellScript.ScriptPath>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String">String.Format("{0}.ps1", _stepId)</mca:CSharpValue>
+                        </InArgument>
+                      </local:ExecutePowershellScript.ScriptPath>
+                    </local:ExecutePowershellScript>
+                    <WriteLine>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">"\r\n\r\nPowershell automation step complete"</mca:CSharpValue>
+                      </InArgument>
+                    </WriteLine>
+                    <Assign>
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpReference x:TypeArguments="x:Boolean">_isStepComplete</mca:CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+              </If>
+            </Sequence>
+          </While>
+        </If.Then>
+        <If.Else>
+          <Sequence>
+            <local:FileExists AutomationExtension="dll">
+              <local:FileExists.AutomationFileExists>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpReference x:TypeArguments="x:Boolean">_doesDotNetAutomationExist</mca:CSharpReference>
+                </OutArgument>
+              </local:FileExists.AutomationFileExists>
+              <local:FileExists.StepId>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">_stepId</mca:CSharpValue>
+                </InArgument>
+              </local:FileExists.StepId>
+            </local:FileExists>
+            <If>
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpValue x:TypeArguments="x:Boolean">_doesDotNetAutomationExist</mca:CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <While>
+                  <While.Condition>
+                    <mca:CSharpValue x:TypeArguments="x:Boolean">!_isStepComplete</mca:CSharpValue>
+                  </While.Condition>
+                  <Sequence>
+                    <WriteLine>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">String.Format("\r\n---Step description:\r\n{0}\r\n\r\nExecute step? (y/n)", stepDescription)</mca:CSharpValue>
+                      </InArgument>
+                    </WriteLine>
+                    <Assign>
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">
+                          <mca:CSharpReference x:TypeArguments="x:String">_isExecuteStepAnswer</mca:CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String">Console.ReadKey().Key.ToString()</mca:CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign>
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpReference x:TypeArguments="x:Boolean">_isExecuteStep</mca:CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean">_isExecuteStepAnswer == "Y"</mca:CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If>
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean">_isExecuteStep</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence DisplayName="DotNetAutomation">
+                          <local:ExecuteAssembly>
+                            <local:ExecuteAssembly.AssemblyName>
+                              <InArgument x:TypeArguments="x:String">
+                                <mca:CSharpValue x:TypeArguments="x:String">String.Format("{0}.dll", _stepId)</mca:CSharpValue>
+                              </InArgument>
+                            </local:ExecuteAssembly.AssemblyName>
+                          </local:ExecuteAssembly>
+                          <WriteLine>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String">"\r\n\r\nDotNet automation step complete"</mca:CSharpValue>
+                            </InArgument>
+                          </WriteLine>
+                          <Assign>
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">
+                                <mca:CSharpReference x:TypeArguments="x:Boolean">_isStepComplete</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                    </If>
+                  </Sequence>
+                </While>
+              </If.Then>
+              <If.Else>
+                <While>
+                  <While.Condition>
+                    <mca:CSharpValue x:TypeArguments="x:Boolean">!_isStepComplete</mca:CSharpValue>
+                  </While.Condition>
+                  <Sequence>
+                    <WriteLine>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">String.Format("\r\n---Step description:\r\n{0}\r\n\r\nExecute step? (y/n)", stepDescription)</mca:CSharpValue>
+                      </InArgument>
+                    </WriteLine>
+                    <Assign>
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">
+                          <mca:CSharpReference x:TypeArguments="x:String">_isExecuteStepAnswer</mca:CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String">Console.ReadKey().Key.ToString()</mca:CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign>
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpReference x:TypeArguments="x:Boolean">_isExecuteStep</mca:CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean">_isExecuteStepAnswer == "Y"</mca:CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If>
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean">_isExecuteStep</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence DisplayName="Manual">
+                          <WriteLine>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String">String.Format("\r\n\r\n---Step instructions:\r\n{0}\r\n\r\nIs step complete? (y/n)", stepInstructions)</mca:CSharpValue>
+                            </InArgument>
+                          </WriteLine>
+                          <Assign>
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <mca:CSharpReference x:TypeArguments="x:String">_isStepCompleteAnswer</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <mca:CSharpValue x:TypeArguments="x:String">Console.ReadKey().Key.ToString()</mca:CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign>
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">
+                                <mca:CSharpReference x:TypeArguments="x:Boolean">_isStepComplete</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">
+                                <mca:CSharpValue x:TypeArguments="x:Boolean">_isStepCompleteAnswer == "Y"</mca:CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                    </If>
+                  </Sequence>
+                </While>
+              </If.Else>
+            </If>
+          </Sequence>
+        </If.Else>
+      </If>
+      <sads:DebugSymbol.Symbol>d1xDOlxkZXZcZGV2ZWxvcG1lbnRcU2FuZGJveFxNbWFwTWFuXE1tYXBNYW5hZ2VyXE1tYXBNYW5hZ2VyLkNvbnNvbGVcQWN0aXZpdHlcUHJvY2Vzc1N0ZXAueGFtbF0uA+oCDgIBATM1MzwCAQU1NTU8AgEENzU3PAIBAzg1ODwCAQI6BUUOAwHfBEYFUQ4DAcQEUgVdDgMBqQReBWIRAwGbBGMFbhgDAf8DbwXoAgoCAQZCC0JPAwHtBD0LPVgDAeAETgtOWAMB0gRJC0lhAwHFBFoLWlkDAbcEVQtVYgMBqgRgCWCJAQMBnARjK2MwAwGaBGYLZnADAY0EawtrUAMBgARyC3JoAgEHdgm6AREDAfICvQEJ5gIUAgEUegu5ARYDAYADeA14XAMB8wK+AQvJAR4DAdYCygEL5QIQAgEVew1/GQMB8QOAAQ2LARYDAdYDjAENlwEWAwG7A5gBDbgBEgMBgQO+ATG+ATYDAfECwQERwQFyAwHkAsYBEcYBVgMB1wLNARHNAWoCARbRAQ+VAhcDAckBmAIP4wIXAgEjfRF9qwEDAfIDiAETiAFxAwHkA4MBE4MBbQMB1wOUAROUAW0DAckDjwETjwFoAwG8A5sBE5sBYAMBggOfARG2ARwDAY8D1QERlAIcAwHXAdMBE9MBYgMBygGcAhHiAhwCATGaAhOaAmICASSgAROmATMDAa0DpwETqwEfAwGfA6wBE7UBHAMBkAPWARPaAR8DAcgC2wET5gEcAwGtAucBE/IBHAMBkgLzAROTAhgDAdgBnQIToQIfAwG7AaICE60CHAMBoAGuAhO5AhwDAYUBugIT4QIYAgEyowEZowF4AwGuA6kBF6kBggEDAaADswE/swFDAwGeA68BGa8BbwMBkQPYARfYAbEBAwHJAuMBGeMBdwMBuwLeARneAXMDAa4C7wEZ7wFzAwGgAuoBGeoBbgMBkwL2ARn2AWYDAdkB+gEXkQIiAwHmAZ8CF58CsQEDAbwBqgIZqgJ3AwGuAaUCGaUCcwMBoQG2Ahm2AnMDAZMBsQIZsQJuAwGGAb0CGb0CZgIBM8ECF98CIgIBQPsBGYECMQMBhAKCAhmGAiUDAfYBhwIZkAIiAwHnAcICGcYCJQIBd8cCGdICIgIBXNMCGd4CIgIBQf4BH/4BfgMBhQKEAh2EAoQBAwH3AY4CRY4CSQMB9QGKAh+KAnUDAegBxAIdxALBAQIBeM8CH88CfQIBasoCH8oCegIBXdsCH9sCegIBT9YCH9YCdQIBQg==</sads:DebugSymbol.Symbol>
+    </Sequence>
+  </local:ProcessStep.Implementation>
+</local:ProcessStep>

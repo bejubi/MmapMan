@@ -1,0 +1,2 @@
+get-executionpolicy
+read-host

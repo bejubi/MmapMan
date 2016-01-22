@@ -1,0 +1,7 @@
+C:\dev\development\Sandbox\MmapMan\MmapManager\Automations\SendSlackMessage\obj\Debug\SendSlackMessage.csprojResolveAssemblyReference.cache
+C:\dev\development\Sandbox\MmapMan\MmapManager\Automations\SendSlackMessage\bin\Debug\Newtonsoft.Json.dll
+C:\dev\development\Sandbox\MmapMan\MmapManager\Automations\SendSlackMessage\bin\Debug\Newtonsoft.Json.xml
+C:\dev\development\Sandbox\MmapMan\MmapManager\Automations\SendSlackMessage\bin\Debug\SendSlackMessage.dll
+C:\dev\development\Sandbox\MmapMan\MmapManager\Automations\SendSlackMessage\bin\Debug\SendSlackMessage.pdb
+C:\dev\development\Sandbox\MmapMan\MmapManager\Automations\SendSlackMessage\obj\Debug\SendSlackMessage.dll
+C:\dev\development\Sandbox\MmapMan\MmapManager\Automations\SendSlackMessage\obj\Debug\SendSlackMessage.pdb

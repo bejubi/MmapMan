@@ -1,0 +1,7 @@
+obj\x86\Debug\_MmapManager.Console.g.cs
+obj\x86\Debug\Process.g.cs
+obj\x86\Debug\ProcessStep.g.cs
+obj\x86\Debug\MmapManager.Console_Process_BeforeInitializeComponentHelper.cs
+obj\x86\Debug\MmapManager.Console.Activity_ProcessStep_BeforeInitializeComponentHelper.cs
+C:\dev\development\Sandbox\MmapMan\MmapManager\MmapManager.Console\obj\x86\Debug\MmapManager.Console_Process_CompiledExpressionRoot.cs
+C:\dev\development\Sandbox\MmapMan\MmapManager\MmapManager.Console\obj\x86\Debug\MmapManager.Console.Activity_ProcessStep_CompiledExpressionRoot.cs
