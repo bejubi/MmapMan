@@ -16,19 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendSlackMessage", "Automations\SendSlackMessage\SendSlackMessage.csproj", "{6E0E18E8-38FB-4F98-861D-8B76B420C9A6}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://tfs:8080/tfs/ts_collection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MmapManager.Console\\MmapManager.Console.csproj
-		SccProjectName1 = MmapManager.Console
-		SccLocalPath1 = MmapManager.Console
-		SccProjectUniqueName2 = Automations\\SendSlackMessage\\SendSlackMessage.csproj
-		SccProjectTopLevelParentUniqueName2 = MmapManager.sln
-		SccProjectName2 = Automations/SendSlackMessage
-		SccLocalPath2 = Automations\\SendSlackMessage
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
